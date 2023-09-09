@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Result Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Student Result Management System</h1>
+        <form id="resultForm">
+            <label for="studentName">Student Name:</label>
+            <input type="text" id="studentName" required>
+            
+            <h2>Enter Subject Marks:</h2>
+            <div id="subjectMarksContainer">
+                <!-- Input fields for 5 subjects -->
+                <div class="subject-mark">
+                    <label for="subject1">Telugu :</label>
+                    <input type="number" class="subject" id="subject1" required>
+                </div>
+                <div class="subject-mark">
+                    <label for="subject2">Hindi :</label>
+                    <input type="number" class="subject" id="subject2" required>
+                </div>
+                <div class="subject-mark">
+                    <label for="subject3">English :</label>
+                    <input type="number" class="subject" id="subject3" required>
+                </div>
+                <div class="subject-mark">
+                    <label for="subject4">Maths :</label>
+                    <input type="number" class="subject" id="subject4" required>
+                </div>
+                <div class="subject-mark">
+                    <label for="subject5">Science :</label>
+                    <input type="number" class="subject" id="subject5" required>
+                </div>
+            </div>
+            
+            <button type="button" id="addResult">Add Result</button>
+        </form>
+        
+        <h2>Student Results:</h2>
+        <table id="resultTable">
+            <thead>
+                <tr>
+                    <th>Student Name</th>
+                    <th>Telugu</th>
+                    <th>Hindi</th>
+                    <th>English</th>
+                    <th>Maths</th>
+                    <th>Science</th>
+                    <th>Total Marks</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Results will be added here dynamically -->
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
